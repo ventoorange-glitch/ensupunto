@@ -21,9 +21,11 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --blue:    #1b3f7a;
-      --blue-dk: #112954;
-      --red:     #cc1f1f;
+      --blue:    #1b3070;
+      --blue-dk: #112654;
+      --blue-md: #2a52a0;
+      --blue-it: #2e5499;
+      --red:     #d42020;
       --red-lt:  #e63030;
       --gray:    #f5f6fa;
       --text:    #222;
@@ -74,7 +76,7 @@
 
     /* ── HERO ── */
     .hero {
-      background: linear-gradient(135deg, var(--blue-dk) 0%, var(--blue) 60%, #2a5aaa 100%);
+      background: linear-gradient(135deg, var(--blue-dk) 0%, var(--blue) 60%, var(--blue-md) 100%);
       color: #fff;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -365,37 +367,7 @@
 <!-- ═══════════════ NAV ═══════════════ -->
 <nav>
   <a href="#inicio" class="nav-logo">
-    <!-- Logo inline SVG (improved) -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="170" height="52" viewBox="0 0 340 104" role="img" aria-label="En Su Punto logo">
-      <!-- Orbit ring (back) -->
-      <ellipse cx="52" cy="52" rx="44" ry="18" fill="none" stroke="#1b3f7a" stroke-width="4.5" stroke-dasharray="130 20" transform="rotate(-30 52 52)"/>
-      <!-- Box / package -->
-      <g transform="translate(28,22)">
-        <!-- front face -->
-        <rect x="0" y="14" width="44" height="36" rx="3" fill="#1b3f7a"/>
-        <!-- top face -->
-        <polygon points="0,14 18,4 62,4 44,14" fill="#2a5aaa"/>
-        <!-- right face -->
-        <polygon points="44,14 62,4 62,40 44,50" fill="#112954"/>
-        <!-- tape stripe -->
-        <rect x="18" y="14" width="8" height="36" fill="#2a5aaa" opacity=".6"/>
-        <rect x="0" y="28" width="44" height="8" fill="#2a5aaa" opacity=".4"/>
-      </g>
-      <!-- Orbit ring (front) -->
-      <ellipse cx="52" cy="52" rx="44" ry="18" fill="none" stroke="#cc1f1f" stroke-width="4.5" stroke-dasharray="60 90" transform="rotate(-30 52 52)"/>
-      <!-- Arrow 1 (top-right of orbit) -->
-      <g transform="translate(84,22) rotate(-30)">
-        <polygon points="0,0 14,5 0,10" fill="#cc1f1f"/>
-      </g>
-      <!-- Arrow 2 (bottom-left of orbit) -->
-      <g transform="translate(20,80) rotate(150)">
-        <polygon points="0,0 14,5 0,10" fill="#cc1f1f"/>
-      </g>
-      <!-- Company name -->
-      <text x="108" y="48" font-family="Montserrat, sans-serif" font-weight="900" font-size="30" fill="#cc1f1f" letter-spacing="1">EN SU PUNTO</text>
-      <!-- Tagline -->
-      <text x="110" y="70" font-family="Montserrat, sans-serif" font-weight="600" font-size="13" fill="#8ca5d0" letter-spacing="2">ADMINISTRACIÓN LOGÍSTICA</text>
-    </svg>
+    <img src="assets/logo.png" alt="En Su Punto – Administración Logística" height="52" style="display:block;" />
   </a>
   <ul>
     <li><a href="#inicio">Inicio</a></li>
@@ -416,35 +388,7 @@
     </div>
   </div>
   <div class="hero-visual">
-    <!-- Large hero logo -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="340" height="300" viewBox="0 0 340 300">
-      <!-- Outer glow ring -->
-      <ellipse cx="170" cy="150" rx="130" ry="54" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="14" transform="rotate(-25 170 150)"/>
-      <!-- Back orbit -->
-      <ellipse cx="170" cy="150" rx="118" ry="48" fill="none" stroke="#1b3f7a" stroke-width="7" stroke-dasharray="290 60" transform="rotate(-25 170 150)"/>
-      <!-- Box -->
-      <g transform="translate(108,62)">
-        <rect x="0" y="42" width="124" height="104" rx="6" fill="#1b3f7a"/>
-        <polygon points="0,42 52,12 176,12 124,42" fill="#2a5aaa"/>
-        <polygon points="124,42 176,12 176,116 124,146" fill="#112954"/>
-        <!-- tape -->
-        <rect x="52" y="42" width="22" height="104" fill="#2a5aaa" opacity=".5"/>
-        <rect x="0" y="80" width="124" height="22" fill="#2a5aaa" opacity=".35"/>
-      </g>
-      <!-- Front orbit (red) -->
-      <ellipse cx="170" cy="150" rx="118" ry="48" fill="none" stroke="#cc1f1f" stroke-width="7" stroke-dasharray="160 230" transform="rotate(-25 170 150)"/>
-      <!-- Arrow top-right -->
-      <g transform="translate(272,88) rotate(-25)">
-        <polygon points="0,0 22,8 0,16" fill="#cc1f1f"/>
-      </g>
-      <!-- Arrow bottom-left -->
-      <g transform="translate(68,212) rotate(155)">
-        <polygon points="0,0 22,8 0,16" fill="#cc1f1f"/>
-      </g>
-      <!-- Company name -->
-      <text x="170" y="258" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-size="38" fill="#fff" letter-spacing="2">EN SU PUNTO</text>
-      <text x="170" y="284" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="14" fill="#8ca5d0" letter-spacing="3">ADMINISTRACIÓN LOGÍSTICA</text>
-    </svg>
+    <img src="assets/logo.png" alt="En Su Punto" style="max-width:420px;width:100%;filter:drop-shadow(0 8px 32px rgba(0,0,0,.5));" />
   </div>
 </section>
 
@@ -556,22 +500,7 @@
       </ul>
     </div>
     <div class="about-visual">
-      <!-- Large centered logo on dark bg -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="260" height="220" viewBox="0 0 260 220">
-        <ellipse cx="100" cy="110" rx="90" ry="37" fill="none" stroke="#1b3f7a" stroke-width="6" stroke-dasharray="220 50" transform="rotate(-25 100 110)"/>
-        <g transform="translate(46,44)">
-          <rect x="0" y="32" width="96" height="80" rx="5" fill="#2a5aaa"/>
-          <polygon points="0,32 40,8 136,8 96,32" fill="#3a70cc"/>
-          <polygon points="96,32 136,8 136,88 96,112" fill="#1b3f7a"/>
-          <rect x="40" y="32" width="16" height="80" fill="#3a70cc" opacity=".5"/>
-          <rect x="0" y="60" width="96" height="16" fill="#3a70cc" opacity=".35"/>
-        </g>
-        <ellipse cx="100" cy="110" rx="90" ry="37" fill="none" stroke="#cc1f1f" stroke-width="6" stroke-dasharray="120 180" transform="rotate(-25 100 110)"/>
-        <g transform="translate(176,62) rotate(-25)"><polygon points="0,0 18,6 0,12" fill="#cc1f1f"/></g>
-        <g transform="translate(24,162) rotate(155)"><polygon points="0,0 18,6 0,12" fill="#cc1f1f"/></g>
-        <text x="130" y="186" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-size="22" fill="#fff" letter-spacing="1.5">EN SU PUNTO</text>
-        <text x="130" y="208" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="10" fill="#8ca5d0" letter-spacing="2.5">ADMINISTRACIÓN LOGÍSTICA</text>
-      </svg>
+      <img src="assets/logo.png" alt="En Su Punto" style="max-width:300px;width:100%;" />
     </div>
   </div>
 </section>
