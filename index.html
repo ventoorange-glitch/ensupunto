@@ -45,16 +45,17 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: var(--blue-dk);
+      background: #fff;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 5%;
-      height: 72px;
-      box-shadow: 0 2px 12px rgba(0,0,0,.35);
+      height: 76px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.12);
+      border-bottom: 3px solid var(--red);
     }
 
-    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; padding: 6px 0; }
 
     nav ul {
       list-style: none;
@@ -63,16 +64,16 @@
     }
 
     nav ul a {
-      color: #cdd9f0;
+      color: var(--blue-dk);
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       font-size: .85rem;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: .06em;
       text-transform: uppercase;
       transition: color .2s;
     }
-    nav ul a:hover { color: #fff; }
+    nav ul a:hover { color: var(--red); }
 
     /* ── HERO ── */
     .hero {
@@ -367,7 +368,7 @@
 <!-- ═══════════════ NAV ═══════════════ -->
 <nav>
   <a href="#inicio" class="nav-logo">
-    <img src="assets/logo.png" alt="En Su Punto – Administración Logística" height="52" style="display:block;" />
+    <img src="assets/logo.png" alt="En Su Punto – Administración Logística" height="62" style="display:block;" />
   </a>
   <ul>
     <li><a href="#inicio">Inicio</a></li>
@@ -388,7 +389,9 @@
     </div>
   </div>
   <div class="hero-visual">
-    <img src="assets/logo.png" alt="En Su Punto" style="max-width:420px;width:100%;filter:drop-shadow(0 8px 32px rgba(0,0,0,.5));" />
+    <div style="background:#fff;border-radius:20px;padding:2.5rem 3rem;box-shadow:0 16px 48px rgba(0,0,0,.3);">
+      <img src="assets/logo.png" alt="En Su Punto" style="max-width:360px;width:100%;display:block;" />
+    </div>
   </div>
 </section>
 
@@ -500,7 +503,9 @@
       </ul>
     </div>
     <div class="about-visual">
-      <img src="assets/logo.png" alt="En Su Punto" style="max-width:300px;width:100%;" />
+      <div style="background:#fff;border-radius:16px;padding:2rem 2.5rem;box-shadow:0 8px 32px rgba(0,0,0,.15);">
+        <img src="assets/logo.png" alt="En Su Punto" style="max-width:280px;width:100%;display:block;" />
+      </div>
     </div>
   </div>
 </section>
